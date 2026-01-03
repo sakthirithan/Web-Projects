@@ -45,6 +45,7 @@ Each project includes:
 | 6  | Random Password    | Generate secure random passwords         |
 | 7  | Notes App          | Create and manage notes                  |
 | 8  | Snack Bar          | Display interactive notification alerts  |
+| 9  | Solvea - Calculator| keyboard-enabled numeric calculator      |
 
 *(Project names and descriptions can be updated as projects evolve.)*
 
