@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #fff;
+  min-height: 100vh;
+  position:relative;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header p {
+  color: #cbd5f5;
+  margin-top: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 30px;
+  text-align: center;
+  border-radius: 12px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.card:hover {
+  background: #6366f1;
+  transform: translateY(-5px);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #94a3b8;
+  width:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
+  background:#0f172a;
+}
+
+/* Socials / Resume section */
+.socials {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  flex-wrap: wrap;
+}
+
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #1e293b;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 2px 8px rgba(2,6,23,0.35);
+  border: 1px solid rgba(255,255,255,0.04);
+}
+
+.social-btn svg {
+  display: block;
+  color: inherit;
+}
+
+.social-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(99,102,241,0.18);
+}
+
+.social-btn.linkedin:hover { background: #0a66c2; }
+.social-btn.instagram:hover { background: linear-gradient(45deg,#f58529,#dd2a7b,#833ab4); }
+.social-btn.resume:hover { background: #10b981; }
+
+@media (max-width: 420px) {
+  .socials { padding: 16px; gap: 8px; }
+  .social-btn { padding: 8px 10px; font-size: 14px; }
+}
