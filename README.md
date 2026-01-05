@@ -46,6 +46,7 @@ Each project includes:
 | 7  | Notes App          | Create and manage notes                  |
 | 8  | Snack Bar          | Display interactive notification alerts  |
 | 9  | Solvea - Calculator| keyboard-enabled numeric calculator      |
+| 10  | Quote Generator| Random Quote with Quotes.js Database      |
 
 *(Project names and descriptions can be updated as projects evolve.)*
 

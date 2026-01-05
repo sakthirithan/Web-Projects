@@ -71,4 +71,4 @@ git clone https://github.com/your-username/quote-generator.git
 
 ---
 ⭐ **If you like this project, give it a star on GitHub!**
-
+**Level Up Your Skills**
