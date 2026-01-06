@@ -2,6 +2,50 @@ const display =  document.getElementById("display");
 const buttons = document.querySelectorAll("input[type='button']");
 const prevDisplay = document.getElementById("prev");
 
+//SpeechToggle Condition 
+let speechToggle = document.getElementById("speechToggle");
+const icon = speechToggle.querySelector("i");
+let isToggle = false;
+console.log("Active Speech Turn on:",isToggle);
+
+speechToggle.addEventListener("click", ()=> {
+    isToggle = !isToggle;
+    icon.classList.toggle("fa-volume-high");
+    icon.classList.toggle("fa-volume-xmark");
+    if(!isToggle){
+        window.speechSynthesis.cancel();
+    }
+
+    console.log("isToggle",isToggle);
+});
+
+// Voice Enabled Calculator
+let speech = new SpeechSynthesisUtterance();
+let voiceBtn = document.getElementById("voiceBtn");
+
+voiceBtn.addEventListener("click", () => {
+    if (!display.value) return;
+
+    window.speechSynthesis.cancel();
+    setTimeout( ()=>{
+        speech.text = display.value;
+        window.speechSynthesis.speak(speech);
+    },600);
+});
+
+//Speech Function for Buttons
+function activeSpeech(text) {
+    if (!text || !isToggle) return;
+
+    window.speechSynthesis.cancel();
+    setTimeout( ()=>{
+        speech.text = text;
+        window.speechSynthesis.speak(speech);
+    },600);
+};
+
+
+//UI Button Activate
 buttons.forEach(btn => {
     btn.addEventListener("click", () => {
         if (btn.value === "="){
@@ -15,6 +59,7 @@ buttons.forEach(btn => {
         }else{
             display.value += btn.value;
         }
+        activeSpeech(btn.value);
     });
 });
 
@@ -39,4 +84,5 @@ document.addEventListener("keydown", (e) => {
         display.value = '';
         prevDisplay.value = '';
     }
+    activeSpeech(e.key);
 });
