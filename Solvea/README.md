@@ -1,7 +1,7 @@
 # 🧮 Solvea – Numeric Calculator Web App
 
-Solvea is a **clean, responsive, and keyboard-enabled numeric calculator web application** built using **HTML, CSS, and Vanilla JavaScript**.  
-It supports basic arithmetic operations with both **mouse and keyboard input**, making it fast, simple, and user-friendly.
+**Solvea** is a clean, responsive, and keyboard-enabled **numeric calculator web application** built using **HTML, CSS, and Vanilla JavaScript**.  
+It supports basic arithmetic operations with **mouse, keyboard, and optional speech assistance**, making it fast, accessible, and user-friendly.
 
 This project is ideal for **frontend practice**, **college mini projects**, and **portfolio showcasing**.
 
@@ -14,15 +14,28 @@ This project is ideal for **frontend practice**, **college mini projects**, and 
 - ✅ Decimal point support
 - ✅ Double zero (`00`) button
 - ✅ Keyboard-enabled calculator
+- ✅ Optional **Speech Assistant (ON / OFF)**
+- ✅ Speak individual key inputs
+- ✅ Speak full expression using voice button
 - ✅ Responsive & modern UI
 - ✅ Clean separation of HTML, CSS, and JavaScript
+
+---
+
+## 🔊 Speech Assistant Controls
+
+- 🔊 **Volume Icon** – Toggle speech assistant ON / OFF  
+- 🖐️ **Voice Button** – Speak the full display value  
+- 🧠 Keys and buttons speak **one at a time** (no overlap)
+
+> Speech uses the **Web Speech API** and works on modern browsers.
 
 ---
 
 ## 🎹 Keyboard Controls
 
 | Key | Action |
-|---|---|
+|-----|--------|
 | `0 – 9` | Enter numbers |
 | `+  -  *  /` | Arithmetic operators |
 | `.` | Decimal point |
@@ -34,12 +47,14 @@ This project is ideal for **frontend practice**, **college mini projects**, and 
 
 ## 🛠️ Tech Stack
 
-- **HTML5** – Structure
-- **CSS3** – Styling & layout
-- **JavaScript (ES6)** – Logic & interactivity
-- **Google Fonts (Poppins)** – Typography
+- **HTML5** – Structure  
+- **CSS3** – Styling & responsive layout  
+- **JavaScript (ES6)** – Logic & interactivity  
+- **Font Awesome** – Icons  
+- **Google Fonts (Poppins)** – Typography  
 
 ---
+
 
 ## 📂 Project Structure
 
@@ -55,6 +70,7 @@ Solvea-Calculator/
 │ └── js/
 │ └── script.js
 
+
 ---
 
 ## ⚙️ How It Works
@@ -64,6 +80,7 @@ Solvea-Calculator/
 3. Special buttons (`AC`, `DEL`, `=`) are handled with conditional logic.
 4. Keyboard events are captured using `keydown`.
 5. Mathematical expressions are evaluated dynamically.
+6. Speech assistant reads input or full expression based on user action.
 
 ---
 
@@ -71,15 +88,18 @@ Solvea-Calculator/
 
 - DOM manipulation
 - Event handling (mouse & keyboard)
-- Debugging DOM-related issues
+- Accessibility basics (speech feedback)
+- Debugging JavaScript logic
 - Clean UI design with CSS
-- Real-world calculator logic
+- Building real-world calculator logic
 
 ---
 
 ## 👨‍💻 Author
 
-**Sakthi** (also known as **Sakthi Rithan**)  
+**Sakthi M**  
+*(also known as **Sakthi Rithan**)*  
+
 Frontend Learner | Project-Based Developer  
 
 ---
