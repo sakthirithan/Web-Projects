@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter';
+  overflow: hidden;
+  background: linear-gradient(180deg, #f8fafc, #eef2ff);
+  color: #0f172a;
+  position: relative;
+}
+
+
+/* -----Header Section----- */
+.container{
+  background-color: rgba(255,255,255,0.8);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.header{
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1140px;
+  margin: auto;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+nav {
+  display: flex;
+  gap: 24px;
+}
+
+.link {
+  text-decoration: none;
+  color: #334155;
+  font-size: 14px;
+}
+
+
+/* -----Hero Section----- */
+.hero {
+  padding: 15% 32px;
+  text-align: center;
+}
+
+.heading {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.text {
+  font-size: 18px;
+  color: #475569;
+  max-width: 600px;
+  margin: 0 auto  32px;
+}
+.btn {
+  padding: 12px 24px;
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* -----Feature Section----- */
+.features-container {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  padding-bottom: 80px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  width: 260px;
+}
+
+.title {
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.text {
+  color: #475569;
+  font-size: 14px;
+}
+
+
+/* -----Footer Section----- */
+.footer {
+  text-align: center;
+  padding: 32px;
+  color: #64748b;
+  font-size: 14px;
+}
